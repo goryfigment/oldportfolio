@@ -19,11 +19,12 @@ $(document).ready(function() {
     });
 
     $(window).bind('scroll', function() {
+        var $topButton = $('#top-button');
          if ($(window).scrollTop() > 500) {
-             $('#top-button').css('opacity', 1);
+             $topButton.show();
          }
          else {
-             $('#top-button').css('opacity', 0);
+             $topButton.hide();
          }
     });
 });
