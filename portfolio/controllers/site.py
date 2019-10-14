@@ -28,6 +28,14 @@ def home(request):
     return render(request, 'home.html', data)
 
 
+def outlier(request):
+    data = {
+        'base_url': get_base_url()
+    }
+
+    return render(request, 'outlier.html', data)
+
+
 def work_page(request, work_name):
 
     data = {
