@@ -1229,6 +1229,7 @@ h2, b, time, strong, em, button {
         left: 50%;
         width: auto;
         top: -50px;
+        overflow: hidden;
     }
 }
 
@@ -1281,6 +1282,11 @@ h2, b, time, strong, em, button {
 }
 
 @media only screen and (max-width: 800px) {
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
     body #team-wrapper {
         min-height: 290px;
         padding: 0
@@ -1293,6 +1299,7 @@ h2, b, time, strong, em, button {
         position: absolute;
         left: -138px;
         top: -37px;
+        overflow-x: hidden;
     }
 
     body #team-wrapper table thead {
