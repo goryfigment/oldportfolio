@@ -995,6 +995,7 @@ h2, b, time, strong, em, button {
     width: 325px;
     margin: auto auto;
     line-height: 28px;
+    padding: 20px;
 }
 
 #statistics-details span:nth-child(1) {
