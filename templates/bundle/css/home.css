@@ -34,7 +34,7 @@ body {
     font-family: 'Karla', Arial, Helvetica, sans-serif, Georgia, serif;
     margin: 0 auto;
     min-height: 100vh;
-    max-width: 100vw;
+    width: 100vw;
     color: #f8f8f8;
     background: #242424;
     overflow-x: hidden;
@@ -139,7 +139,7 @@ a:hover {
         transition: transform ease 0.5s, -webkit-transform ease 0.5s;
     }
 
-    img {
+    img, #mccstats-wrapper {
         -webkit-transform: scale(0.4);
             -ms-transform: scale(0.4);
                 transform: scale(0.4);
@@ -181,7 +181,7 @@ a:hover {
 
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
-    img {
+    img, #mccstats-wrapper {
         -webkit-transform: scale(0.6);
             -ms-transform: scale(0.6);
                 transform: scale(0.6);
@@ -441,3 +441,254 @@ img {
     background: #5e25b1;
 }
 /*Attendance*/
+
+/*MCCSTATS*/
+@font-face {
+    font-family: Rajdhani;
+    font-display: swap;
+    src: local('Rajdhani'), url(/templates/bundle/assets/fonts/Rajdhani/Rajdhani-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Rajdhani;
+    font-display: swap;
+    src: local('Rajdhani'), url(/templates/bundle/assets/fonts/Rajdhani/Rajdhani-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    font-display: swap;
+    src: local('Roboto'), url(/templates/bundle/assets/fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    font-display: swap;
+    src: local('Roboto'), url(/templates/bundle/assets/fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+#mccstats {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+#mccstats-wrapper {
+    position: relative;
+    font-family: 'Rajdhani', 'Roboto', sans-serif;
+}
+
+#mccstats-container {
+    position: absolute;
+    top: 90px;
+    left: 25px;
+}
+
+#mccstats-header {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: calc(100% - 4px);
+    background: #070707;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 2px;
+}
+
+#mccstats-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+#mccstats-title span {
+    color: #00ff66;
+}
+
+#mccstats-container p {
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    text-align: left;
+}
+
+#mccstats video {
+    position: relative;
+    height: 365px;
+    z-index: 0;
+}
+
+#mccstats-icon-wrapper {
+    -webkit-transform: scale(0.45);
+        -ms-transform: scale(0.45);
+            transform: scale(0.45);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    top: -56px;
+    position: relative;
+}
+
+#search {
+    margin-top: 20px;
+    width: 420px;
+    font-family: 'Rajdhani', 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.icon-links {
+    text-decoration: none;
+    line-height: 36px;
+    -webkit-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+    border-radius: 1px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#leaderboard {
+    color: gold;
+    font-size: 28px;
+}
+
+#discord {
+    color: #7289DA;
+}
+
+#donate {
+    color: #29df27;
+}
+
+#twitter {
+    color: #1DA1F2;
+}
+
+#discord:hover, #donate:hover {
+    -webkit-filter: brightness(1.2);
+            filter: brightness(1.2);
+}
+
+/*SEARCH*/
+@media only screen and (max-width: 420px) {
+    #search-wrapper {
+        -webkit-transform: scale(0.75);
+            -ms-transform: scale(0.75);
+                transform: scale(0.75);
+        -webkit-transition: -webkit-transform ease 0.5s;
+        transition: -webkit-transform ease 0.5s;
+        -o-transition: transform ease 0.5s;
+        transition: transform ease 0.5s;
+        transition: transform ease 0.5s, -webkit-transform ease 0.5s;
+        -webkit-transform-origin: top;
+            -ms-transform-origin: top;
+                transform-origin: top;
+    }
+}
+
+#search-wrapper {
+    -webkit-animation: uploadModalBounce .4s linear;
+            animation: uploadModalBounce .4s linear;
+}
+
+#search-wrapper label {
+    font-family: 'Rajdhani', 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+#search-container {
+    padding-right: 10px;
+    white-space: nowrap;
+    width: 380px;
+    height: 50px;
+    margin: 15px 0;
+    -webkit-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+    transition: all 150ms ease-out;
+    background: #ffffff;
+    color: #000000;
+    -webkit-transform: scale(0.45);
+        -ms-transform: scale(0.45);
+            transform: scale(0.45);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    position: relative;
+    top: -22px;
+}
+
+#search-container:hover {
+    -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-input-placeholder {
+    color: #a1a1a1;
+    font-weight: bold;
+    font-family: 'Rajdhani', 'Roboto', sans-serif;
+    -webkit-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+    transition: all 150ms ease-out;
+}
+
+#search-container:hover #search-icon {
+    color: #6c6c6c;
+}
+
+#search-icon {
+    padding: 15px;
+    cursor: pointer;
+    color: #a1a1a1;
+    -webkit-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+    transition: all 150ms ease-out;
+}
+
+#search-input {
+    background-color: transparent;
+    width: 244px;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    height: 50px;
+    line-height: 20px;
+    padding: 0 10px 0 0;
+    color: #343434;
+    font-family: 'Rajdhani', 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#search-submit {
+    color: white !important;
+    background: #008400 !important;
+    padding: 8px 21px;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+}
+
+#search-submit:hover {
+    -webkit-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+    transition: all 150ms ease-out;
+    -webkit-filter: brightness(1.15);
+            filter: brightness(1.15);
+}
+/*SEARCH*/
+
+#mccstats p {
+    max-width: 530px;
+}
+
+#mccstats button {
+    background: #171717;
+}
+/*MCCSTATS*/

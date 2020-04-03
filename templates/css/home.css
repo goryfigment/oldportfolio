@@ -12,7 +12,7 @@
         transition: transform ease 0.5s;
     }
 
-    img {
+    img, #mccstats-wrapper {
         transform: scale(0.4);
         transition: all 0.5s ease;
         margin: -60px 0;
@@ -43,7 +43,7 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
-    img {
+    img, #mccstats-wrapper {
         transform: scale(0.6);
         transition: all 0.5s ease;
     }
@@ -262,3 +262,224 @@ img {
     background: #5e25b1;
 }
 /*Attendance*/
+
+/*MCCSTATS*/
+@font-face {
+    font-family: Rajdhani;
+    font-display: swap;
+    src: local('Rajdhani'), url(/templates/bundle/assets/fonts/Rajdhani/Rajdhani-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Rajdhani;
+    font-display: swap;
+    src: local('Rajdhani'), url(/templates/bundle/assets/fonts/Rajdhani/Rajdhani-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    font-display: swap;
+    src: local('Roboto'), url(/templates/bundle/assets/fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    font-display: swap;
+    src: local('Roboto'), url(/templates/bundle/assets/fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+#mccstats {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+#mccstats-wrapper {
+    position: relative;
+    font-family: 'Rajdhani', 'Roboto', sans-serif;
+}
+
+#mccstats-container {
+    position: absolute;
+    top: 90px;
+    left: 25px;
+}
+
+#mccstats-header {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: calc(100% - 4px);
+    background: #070707;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 2px;
+}
+
+#mccstats-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+#mccstats-title span {
+    color: #00ff66;
+}
+
+#mccstats-container p {
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    text-align: left;
+}
+
+#mccstats video {
+    position: relative;
+    height: 365px;
+    z-index: 0;
+}
+
+#mccstats-icon-wrapper {
+    transform: scale(0.45);
+    transform-origin: left;
+    top: -56px;
+    position: relative;
+}
+
+#search {
+    margin-top: 20px;
+    width: 420px;
+    font-family: 'Rajdhani', 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.icon-links {
+    text-decoration: none;
+    line-height: 36px;
+    transition: 0.5s ease all;
+    border-radius: 1px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#leaderboard {
+    color: gold;
+    font-size: 28px;
+}
+
+#discord {
+    color: #7289DA;
+}
+
+#donate {
+    color: #29df27;
+}
+
+#twitter {
+    color: #1DA1F2;
+}
+
+#discord:hover, #donate:hover {
+    filter: brightness(1.2);
+}
+
+/*SEARCH*/
+@media only screen and (max-width: 420px) {
+    #search-wrapper {
+        transform: scale(0.75);
+        transition: transform ease 0.5s;
+        transform-origin: top;
+    }
+}
+
+#search-wrapper {
+    animation: uploadModalBounce .4s linear;
+}
+
+#search-wrapper label {
+    font-family: 'Rajdhani', 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+#search-container {
+    padding-right: 10px;
+    white-space: nowrap;
+    width: 380px;
+    height: 50px;
+    margin: 15px 0;
+    transition: all 150ms ease-out;
+    background: #ffffff;
+    color: #000000;
+    transform: scale(0.45);
+    transform-origin: left;
+    position: relative;
+    top: -22px;
+}
+
+#search-container:hover {
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-input-placeholder {
+    color: #a1a1a1;
+    font-weight: bold;
+    font-family: 'Rajdhani', 'Roboto', sans-serif;
+    transition: all 150ms ease-out;
+}
+
+#search-container:hover #search-icon {
+    color: #6c6c6c;
+}
+
+#search-icon {
+    padding: 15px;
+    cursor: pointer;
+    color: #a1a1a1;
+    transition: all 150ms ease-out;
+}
+
+#search-input {
+    background-color: transparent;
+    width: 244px;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    height: 50px;
+    line-height: 20px;
+    padding: 0 10px 0 0;
+    color: #343434;
+    font-family: 'Rajdhani', 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#search-submit {
+    color: white !important;
+    background: #008400 !important;
+    padding: 8px 21px;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+}
+
+#search-submit:hover {
+    transition: all 150ms ease-out;
+    filter: brightness(1.15);
+}
+/*SEARCH*/
+
+#mccstats p {
+    max-width: 530px;
+}
+
+#mccstats button {
+    background: #171717;
+}
+/*MCCSTATS*/

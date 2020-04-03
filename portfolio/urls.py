@@ -23,4 +23,5 @@ urlpatterns = [
 
     url(r'^work/(?P<work_name>[-A-Za-z]+)',  site.work_page, name='work_page'),
     url(r'^outlier',  site.outlier, name='outlier'),
+    url(r'^omnislash',  site.omnislash, name='omnislash'),
 ]

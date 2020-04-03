@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +38,44 @@
     </div>
 
     <div id="work-wrapper">
+        <div class="work" id="mccstats">
+            <div id="mccstats-wrapper">
+                <div id="mccstats-header">MCCSTATS</div>
+                <video crossorigin="anonymous" preload="auto" loop autoplay muted src="{% static 'bundle/assets/vg.mp4' %}"></video>
+                <div id="mccstats-container">
+                    <h5 id="mccstats-title">MCCSTATS<span>.COM</span></h5>
+
+                    <p>Stats & Leaderboards for Halo MCC</p>
+
+                    <div id="search-container">
+                        <span id="search-icon"><i class="fas fa-search"></i></span>
+                        <input id="search-input" name="q" value="" autocomplete="off" placeholder="Search">
+                        <button id="search-submit">Enter</button>
+                    </div>
+
+                    <div id="mccstats-icon-wrapper">
+                        <a class="icon-links" id="leaderboard"><i class="fas fa-trophy"></i></a>
+                        <a class="icon-links" id="discord" target="_blank" href="https://discord.gg/WThKyP"><i class="fab fa-discord"></i></a>
+                        <a class="icon-links" id="donate" href="/donate"><i class="fas fa-dollar-sign"></i></a>
+                        <a class="icon-links" id="twitter" target="_blank" href="https://twitter.com/GoryFigment"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h2>Stats & Leaderboards for Halo MCC</h2>
+            <p>Application that reports players stats and creates leaderboards for Halo: Master Chief Collection</p>
+            <div class="site-url-wrapper">
+                <a class="demo-link" href="https://www.mccstats.com/" target="_blank" rel="noopener">
+                    <button>View Live</button>
+                </a>
+                <a class="site-link" href="/work/mccstats" target="_blank" rel="noopener">
+                    <button>View Details</button>
+                </a>
+                <a class="code-link" href="https://github.com/goryfigment/halo" target="_blank" rel="noopener">
+                    <button>View Code</button>
+                </a>
+            </div>
+        </div>
+
         <div class="work" id="inventory">
             <img alt="Inventory Home Page" src="/templates/bundle/assets/inventory/home.png" />
             <h2>Inventory Management & Point of Sale System</h2>

@@ -14,7 +14,8 @@ module.exports = {
         //500: './templates/js/error.js',
         home: './templates/js/home.js',
         work_page: './templates/js/work_page.js',
-        outlier: './templates/js/outlier.js'
+        outlier: './templates/js/outlier.js',
+        omnislash: './templates/js/omnislash.js',
     },
     output: {path: __dirname + '/templates/bundle', filename: 'js/[name].js', publicPath: '/templates/bundle/'},
     module: {
@@ -41,6 +42,7 @@ module.exports = {
         //new HtmlWebpackPlugin({filename: '500.html', chunks: ['vendors','error'], minify: {collapseWhitespace: true}, hash: true, template: './templates/500.html'}),
         new HtmlWebpackPlugin({filename: 'home.html', chunks: ['vendors','home'], minify: {collapseWhitespace: true}, hash: true, template: './templates/home.html'}),
         new HtmlWebpackPlugin({filename: 'outlier.html', chunks: ['vendors','outlier'], minify: {collapseWhitespace: true}, hash: true, template: './templates/outlier.html'}),
+        new HtmlWebpackPlugin({filename: 'omnislash.html', chunks: ['vendors','omnislash'], minify: {collapseWhitespace: true}, hash: true, template: './templates/omnislash.html'}),
         new HtmlWebpackPlugin({filename: 'work_page.html', chunks: ['vendors','work_page'], minify: {collapseWhitespace: true}, hash: true, template: './templates/work_page.html'}),
     ],
     resolve: {

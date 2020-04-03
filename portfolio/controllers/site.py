@@ -36,6 +36,14 @@ def outlier(request):
     return render(request, 'outlier.html', data)
 
 
+def omnislash(request):
+    data = {
+        'base_url': get_base_url()
+    }
+
+    return render(request, 'omnislash.html', data)
+
+
 def work_page(request, work_name):
 
     data = {
