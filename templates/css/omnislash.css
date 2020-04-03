@@ -53,8 +53,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(47, 36, 37, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     height: 32px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
 }
 
 header img {
@@ -106,7 +109,7 @@ header nav a {
 
 #model-header {
     text-align: center;
-    padding: 20px 0;
+    padding: 52px 0 20px;
 }
 
 #model-header img {
