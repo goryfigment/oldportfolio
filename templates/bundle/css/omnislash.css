@@ -116,6 +116,7 @@ header nav a {
 /*MODEL 1*/
 #model-1 {
     height: calc(100vh - 32px);
+    min-height: 900px;
 }
 
 #model-header {
@@ -140,12 +141,11 @@ header nav a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    left: -300px;
+    left: -345px;
     width: calc(100vw + 300px);
 }
 
 #character-1 {
-    height: calc(100vh - 100px);
     position: relative;
     top: -95px;
 }
@@ -247,11 +247,19 @@ header nav a {
 }
 
 .data {
-    height: 733px;
+    margin-top: 240px;
 }
 
 .character {
     padding: 105px 100px 0 0;
+}
+
+#model-3 .data {
+    margin-right: 80px;
+}
+
+#model-4 .data {
+    margin-left: 80px;
 }
 /*MODEL*/
 
