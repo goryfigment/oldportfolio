@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'whey2ez',
 #         'USER': 'gethypebaby',
-#         'PASSWORD': 'sol2133080',
+#         'PASSWORD': 'gggggg',
 #         'HOST': 'whey2ez.c8ifh9asotnn.us-east-1.rds.amazonaws.com',
 #         'PORT': '3306'
 #     }
